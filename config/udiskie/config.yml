@@ -1,0 +1,7 @@
+
+program_options:
+  automount:        true   # [bool] Enable automatic mounting.
+
+  notify:           true    # [bool] Enable notifications.
+
+  file_manager:     ranger
