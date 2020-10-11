@@ -148,7 +148,6 @@ rcd() {
 bindkey -s '^o' 'rcd\n'
 alias r="rcd"
 
-export PS1="%{$fg[magenta]%}%c %(?,%{$fg[blue]%}> ,%{$fg[red]%}> )"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
