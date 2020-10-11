@@ -6,6 +6,7 @@ BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 CONFIG="install.conf"
 DOTBOT_DIR="dotbot"
+PACAUR_DIR="dotbot-pacaur"
 
 DOTBOT_BIN="bin/dotbot"
 PACAUR_BIN="${BASEDIR}/dotbot-pacaur/pacaur.py"
@@ -13,5 +14,8 @@ PACAUR_BIN="${BASEDIR}/dotbot-pacaur/pacaur.py"
 cd "${BASEDIR}"
 git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
 git submodule update --init --recursive "${DOTBOT_DIR}"
+
+git -C "${PACAUR_DIR}" submodule sync --quiet --recursive
+git submodule update --init --recursive "${PACAUR_DIR}"
 
 "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" -p "${PACAUR_BIN}" "${@}"
