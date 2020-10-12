@@ -75,7 +75,7 @@ font-2 = Font Awesome 5 Free Solid:pixelsize=11
 
 modules-left = workspaces 
 modules-center = cpu memory
-modules-right = mailcheck wireless-network volume battery date time
+modules-right = wireless-network volume battery date time
 
 separator = %{F#4a4a4a}|%{F-}
 
