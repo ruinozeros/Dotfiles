@@ -1,3 +1,5 @@
 [user]
 	email = thomas.ruess@posteo.net
 	name = Thomas Ruess
+[pull]
+	rebase = false
