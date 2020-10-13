@@ -194,4 +194,4 @@ exec_always --no-startup-id $HOME/.config/polybar/polyrun.sh
 exec --no-startup-id dunst -con $HOME/.config/dunst/dunstrc
 exec --no-startup-id udiskie &
 exec --no-startup-id juiced -d
-
+exec --no-startup-id picom --config $HOME/.config/picom/config
