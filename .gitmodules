@@ -6,3 +6,7 @@
 	path = dotbot-pacaur
     url = https://github.com/ajlende/dotbot-pacaur
     shallow = true
+[submodule "zsh/themes/powerlevel10k"]
+	path = zsh/themes/powerlevel10k
+    url = https://gitee.com/romkatv/powerlevel10k.git
+    shallow = true
