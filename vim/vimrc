@@ -24,6 +24,7 @@ Plugin 'honza/vim-snippets'                     " collection of snippets
 Plugin 'ycm-core/YouCompleteMe'
 Plugin 'vim-syntastic/syntastic'                " syntax checks
 Plugin 'dylanaraps/wal.vim'                     " wallpaper scheme
+Plugin 'jiangmiao/auto-pairs'                   " Insert or delete brackets, parens, quotes in pair.
 
 call vundle#end()                               " required
 filetype plugin indent on                       " required
@@ -82,6 +83,7 @@ nnoremap <C-h> <C-W>h
 nnoremap gj gT
 nnoremap gk gt
 
+" hex editoring
 :command Hex %!xxd
 :command Unhex %!xxd -r
 
