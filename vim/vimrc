@@ -26,6 +26,7 @@ Plugin 'vim-syntastic/syntastic'                " syntax checks
 Plugin 'dylanaraps/wal.vim'                     " wallpaper scheme
 Plugin 'jiangmiao/auto-pairs'                   " Insert or delete brackets, parens, quotes in pair.
 
+
 call vundle#end()                               " required
 filetype plugin indent on                       " required
 
@@ -80,15 +81,18 @@ nnoremap <C-l> <C-W>l
 nnoremap <C-h> <C-W>h
 
 " move between tabs with g + j/k
-nnoremap gj gT
-nnoremap gk gt
+
+nnoremap tj gT
+nnoremap tk gt
+nnoremap to :tabnew<Space>
+nnoremap tc :tabclose<Enter>
 
 " hex editoring
 :command Hex %!xxd
 :command Unhex %!xxd -r
 
 " Plugin Settings
-
+"
 "" VIMWIKI
 
 let wiki_home = {
