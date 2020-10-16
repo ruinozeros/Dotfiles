@@ -14,7 +14,7 @@ if type "xrandr" > /dev/null; then
 	for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
 
         BAR_CONFIG="b_$m"
-		MONITOR=$m polybar --reload $BAR_CONFIG -c ~/.config/polybar/config &
+		MONITOR=$m polybar --reload $BAR_CONFIG -c ~/.config/polybar/config.ini &
 
 	done
 fi
