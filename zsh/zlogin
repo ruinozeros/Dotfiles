@@ -1,0 +1,5 @@
+# set wallpaper
+~/.fehbg &
+
+# set keyboard layour for X
+setxkbmap de
