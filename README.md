@@ -12,7 +12,7 @@ The install script uses the [Dotbot](https://github.com/anishathalye/dotbot) for
 
 ## Screenshots
 
-![screenshot of empty desktop](screenshot1.png)
+![screenshot1](screenshot1.png)
 
 I love the digital art by [aenami](https://www.artstation.com/aenamiart).
 
