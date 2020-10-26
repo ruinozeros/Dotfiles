@@ -13,7 +13,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-set $gfont terminus:monospace 20
+set $gfont pango:Terminus 12
 font $gfont
 
 # Use pactl to adjust volume in PulseAudio.
@@ -33,6 +33,9 @@ bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run -fn '$gfont'
+
+# start passmenu (a password manager)
+bindsym $mod+g exec passmenu -fn '$gfont'
 
 # change focus
 bindsym $mod+h focus left
