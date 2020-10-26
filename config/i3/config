@@ -16,11 +16,13 @@ set $mod Mod4
 set $gfont pango:Terminus 12
 font $gfont
 
-# Use pactl to adjust volume in PulseAudio.
-set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && notify-send -t 600 -i "$HOME/.local/share/icons/vup-32.ico" "volume up" "$(pamixer --get-volume)%" 
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10%  && notify-send -t 600 -i "$HOME/.local/share/icons/vdown-32.ico" "volume down" "$(pamixer --get-volume)%"
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && notify-send -t 600 "volume mute" "$(pamixer --get-mute)"
+# Function Keys 
+bindsym XF86AudioRaiseVolume exec --no-startup-id $HOME/.config/i3/volume-up.sh
+bindsym XF86AudioLowerVolume exec --no-startup-id $HOME/.config/i3/volume-down.sh
+bindsym XF86AudioMute exec --no-startup-id $HOME/.config/i3/volume-mute.sh 
+bindsym XF86MonBrightnessDown exec --no-startup-id $HOME/.config/i3/brightness-down.sh
+bindsym XF86MonBrightnessUp exec --no-startup-id $HOME/.config/i3/brightness-up.sh
+
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
