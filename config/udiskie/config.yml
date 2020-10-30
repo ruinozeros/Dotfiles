@@ -1,7 +1,17 @@
 
 program_options:
-  automount:        true   # [bool] Enable automatic mounting.
+  automount:        true
+  notify:           false
+  tray:             false
+  notify_command:   "notify-send -i ~/.local/share/icons/icons8-usb-connector-48.png '{event}' '{device_presentation}'"
 
-  notify:           true    # [bool] Enable notifications.
+notifications:
+  timeout:          1.5
+  device_added:     1
+  device_removed:   1
+  device_mounted:   5
+  device_unmounted: 5
+  device_unlocked:  1
+  device_locked:    1
+  job_failed:       1
 
-  file_manager:     ranger
