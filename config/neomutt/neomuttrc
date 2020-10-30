@@ -1,0 +1,33 @@
+# vim: filetype=neomuttrc
+
+# Accounts --------------------------------------------------------------------
+source "pass /mutt/email1 |"
+
+# Files -----------------------------------------------------------------------
+source                ~/.config/neomutt/settings
+source                ~/.config/neomutt/colors
+set mailcap_path 	= ~/.config/neomutt/mailcap
+set signature       = ~/.config/neomutt/signature
+
+# Bindings --------------------------------------------------------------------
+bind pager j next-line
+bind pager k previous-line
+bind pager g noop # As suggested here https://www.neomutt.org/guide/configuration.html#bind-warnings
+bind pager gg top
+bind pager G bottom
+bind attach,index g noop # As suggested here https://www.neomutt.org/guide/configuration.html#bind-warnings
+bind attach,index gg first-entry
+bind attach,index G last-entry
+
+# bind editor <Tab> complete-query
+bind index,pager F flag-message
+bind index,pager P purge-message
+bind index,pager S save-message
+bind index,pager R group-reply
+
+# Sidebar navigation
+bind index,pager \CP sidebar-prev                 # Ctrl-n Next Folder
+bind index,pager \CN sidebar-next                 # Ctrl-p Previous Folder
+bind index,pager \CO sidebar-open                 # Ctrl-o Open Folder
+bind index,pager \CB sidebar-toggle-visible       # Ctrl-b Toggle Sidebar
+

@@ -1,0 +1,5 @@
+# vim: filetype=mailcap
+
+text/html; w3m -I %{charset} -T text/html; copiousoutput;
+application/pdf; pdftotext %s -; copiousoutput;
+application/pdf; xpdf;
