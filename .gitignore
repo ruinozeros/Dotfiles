@@ -1,4 +1,6 @@
 # gitignore
 
 __pycache__/
-.gitignore
+config/nvim/autoload
+config/neomutt/signature
+config/neomutt/aliases
