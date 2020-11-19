@@ -57,8 +57,5 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'norcalli/nvim-colorizer.lua'
     " Color theme
     Plug 'joshdick/onedark.vim'
-    
-    Plug 'https://github.com/coddingtonbear/neomake-platformio.vim'
-
     call plug#end()
 

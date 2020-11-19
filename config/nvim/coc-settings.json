@@ -1,3 +1,14 @@
 {
-    "clangd.enabled": true
+    "languageserver": {
+        "ccls": {
+            "command": "ccls",
+            "filetypes": ["c", "cpp"],
+            "rootPatterns": [".ccls", "compile_commands.json"],
+            "initializationOptions": {
+                "cache": {
+                    "directory": "/tmp/ccls"
+                }
+            }
+        }
+    }
 }
