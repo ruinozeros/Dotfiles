@@ -20,4 +20,32 @@ else
     fi
 fi
 
+
+if [ -d $HOME/.oh-my-zsh/custom/themes/powerlevel10k ]; then
+    echo powerlevel10k is already installed!
+else
+    echo install powerlevel10k
+    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
+    success=$?
+    if [ -f $HOME/.p10k.zsh ]; then
+        source ~/.p10k.zsh
+    fi
+fi
+
+
+if [ -d $HOME/.autojump ]; then
+    echo autojump is already installed!
+else
+    echo install autojump
+    git clone git://github.com/wting/autojump.git ~/autojump
+    cd $HOME/autojump
+    $HOME/autojump/install.py
+    sudo rm -rd $HOME/autojump
+fi
+
+
+
+
+
 return $success
