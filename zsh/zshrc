@@ -120,12 +120,15 @@ export BROWSER='firefox'
 # Aliases
 alias q=exit
 alias c=clear
-alias vimwiki="vim -c VimwikiIndex"
-alias vimdiary="vim -c VimwikiDiaryIndex"
+alias vim=nvim
+alias v=nvim
+alias vimwiki="nvim -c VimwikiIndex"
+alias vimdiary="nvim -c VimwikiDiaryIndex"
 alias cb=popd
 alias vimrc="vim ~/.vimrc"
 alias w3m="w3m duckduckgo.com/lite"
 alias mail="neomutt"
+alias ls="ls-icons"
 
 # colors
 autoload -U colors
@@ -159,8 +162,4 @@ export NVM_DIR="$HOME/.nvm"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-
-# show pending todo's
-task
-echo ""
 
