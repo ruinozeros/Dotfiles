@@ -3,6 +3,9 @@
 # Accounts --------------------------------------------------------------------
 source "pass /mutt/email1 |"
 
+set pgp_sign_as=0xC0838EE58D625538BA7F473E25D868301AF43E89
+
+
 # Files -----------------------------------------------------------------------
 source                ~/.config/neomutt/settings
 source                ~/.config/neomutt/colors
