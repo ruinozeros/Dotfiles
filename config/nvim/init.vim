@@ -22,4 +22,4 @@ source $HOME/.config/nvim/plugins/rainbow.vim
 source $HOME/.config/nvim/plugins/illuminate.vim
 luafile $HOME/.config/nvim/plugins/colorizer.vim
 source $HOME/.config/nvim/plugins/coc.vim
-
+source $HOME/.config/nvim/plugins/indentline.vim

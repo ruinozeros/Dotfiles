@@ -57,5 +57,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'norcalli/nvim-colorizer.lua'
     " Color theme
     Plug 'joshdick/onedark.vim'
+    " Intent lines
+    Plug 'Yggdroot/indentLine'
+
     call plug#end()
 
