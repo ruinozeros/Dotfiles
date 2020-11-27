@@ -7,6 +7,9 @@ set shiftwidth=4
 set expandtab
 set autoindent
 
+" in makefiles, don't expand tabs to spaces
+autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
+
 " set list
 set listchars=tab:→\ ,space:·,nbsp:␣,precedes:«,extends:»
 hi SpecialKey ctermfg=66 guifg=#649A9A
