@@ -201,3 +201,4 @@ exec --no-startup-id dunst -con $HOME/.config/dunst/dunstrc
 exec --no-startup-id udiskie &
 exec --no-startup-id juiced -d
 exec --no-startup-id picom --config $HOME/.config/picom/config
+exec --no-startup-id batsignal -I $HOME/.local/share/icons/icons8-battery-48.png -e
