@@ -86,13 +86,16 @@ plugins=(
     # autojump
     git                     # git support
     colored-man-pages       # show color in man pages
-    #colorize                # show syntax highlighting when cat a src file
+    colorize                # show syntax highlighting when cat a src file
     cp                      # show progress bar when copying files
     extract                 # simply extract 7z, apk, gz, rar, tar, ...
     history-substring-search # similar to fish's history selection
     command-not-found       # shows "the program mutt can be found in the following packages ..."
     web-search              # web-search <context> <terms> - example: websearch ddg oh-my-zsh
 )
+
+# colorize configuration
+ZSH_COLORIZE_TOOL=pygmentize
 
 source $ZSH/oh-my-zsh.sh
 
@@ -129,6 +132,7 @@ alias vimrc="vim ~/.vimrc"
 alias w3m="w3m duckduckgo.com/lite"
 alias mail="neomutt"
 alias ls="ls-icons"
+alias cat=ccat
 
 # colors
 autoload -U colors
