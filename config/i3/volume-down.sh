@@ -20,6 +20,5 @@ else
     icon=$ICON_VOLUME_HIG
 fi   
 
-notify-send -t 600 -i $icon "Decrease Volume" "$percentage%"
-
+dunstify -h string:x-dunst-stack-tag:pamixer "Sound" "Decrease Volume to $percentage" -i $icon -t 700 
 

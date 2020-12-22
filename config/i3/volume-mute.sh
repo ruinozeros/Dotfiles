@@ -23,11 +23,11 @@ if [ "$is_muted" = "true" ]; then
         icon=$ICON_VOLUME_HIG
     fi   
 
-    notify-send -t 600 -i $icon "Unmute Volume"
     pamixer --unmute
+    dunstify -h string:x-dunst-stack-tag:pamixer "Sound" "Unmute Volume" -i $icon -t 700 
 else
     icon=$ICON_VOLUME_OFF
 
-    notify-send -t 600 -i $icon "Mute Volume"
     pamixer --mute
+    dunstify -h string:x-dunst-stack-tag:pamixer "Sound" "Mute Volume" -i $icon -t 700 
 fi
