@@ -132,11 +132,12 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # disable title bar
-for_window [ class="^.*" ] border pixel 0
+for_window [class="^.*" ] border pixel 0
 for_window [class="Tk"] floating enable
 for_window [class="vlc"] floating enable
 for_window [window_role="About"] floating enable
-
+for_window [instance="Godot_Engine"] floating enable
+for_window [instance="Godot_Editor"] floating disable
 
 mode "i3exit" {
         bindsym Return mode "default" exec killall i3-nagbar

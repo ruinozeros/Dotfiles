@@ -23,3 +23,7 @@ source $HOME/.config/nvim/plugins/illuminate.vim
 luafile $HOME/.config/nvim/plugins/colorizer.vim
 source $HOME/.config/nvim/plugins/coc.vim
 source $HOME/.config/nvim/plugins/indentline.vim
+source $HOME/.config/nvim/plugins/snipmate.vim
+source $HOME/.config/nvim/plugins/togglecursor.vim
+source $HOME/.config/nvim/plugins/undotree.vim
+

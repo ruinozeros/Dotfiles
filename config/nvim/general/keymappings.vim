@@ -12,3 +12,7 @@ nnoremap tk gt
 nnoremap to :tabnew<Space>
 nnoremap tc :tabclose<Enter>
 
+" Ctrl+s for saving
+nnoremap <silent> <C-S>         :update<CR>
+vnoremap <silent> <C-S>         <C-C>:update<CR>
+inoremap <silent> <C-S>         <C-O>:update<CR>

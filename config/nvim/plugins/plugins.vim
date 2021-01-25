@@ -45,8 +45,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " See what keys do like in emacs
     Plug 'liuchengxu/vim-which-key'
     " Snippets
+    Plug 'tomtom/tlib_vim'                      " needed by vim-snipmate
+    Plug 'MarcWeber/vim-addon-mw-utils'         " needed by vim-snipmate
+    Plug 'garbas/vim-snipmate'
     Plug 'honza/vim-snippets'
-    Plug 'mattn/emmet-vim'
     " Rainbow brackets
     Plug 'luochen1990/rainbow'
     " Calendar
@@ -59,6 +61,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'joshdick/onedark.vim'
     " Intent lines
     Plug 'Yggdroot/indentLine'
+    " History
+    Plug 'mbbill/undotree'
+    " Toggle curser shape
+    Plug 'jszakmeister/vim-togglecursor'
 
     call plug#end()
 
