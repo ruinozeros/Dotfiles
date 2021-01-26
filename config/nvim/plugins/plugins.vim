@@ -44,11 +44,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'mhinz/vim-startify'
     " See what keys do like in emacs
     Plug 'liuchengxu/vim-which-key'
-    " Snippets
-    Plug 'tomtom/tlib_vim'                      " needed by vim-snipmate
-    Plug 'MarcWeber/vim-addon-mw-utils'         " needed by vim-snipmate
-    Plug 'garbas/vim-snipmate'
-    Plug 'honza/vim-snippets'
     " Rainbow brackets
     Plug 'luochen1990/rainbow'
     " Calendar
