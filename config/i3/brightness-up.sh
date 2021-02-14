@@ -10,6 +10,10 @@ if [ $percentage -lt 10 ]; then
     percentage=10
 else
     percentage=$((percentage+10))
+
+    if [ $percentage -gt 100 ]; then
+        percentage=100
+    fi
 fi
 
 # use brightnessctrl to set the new level
