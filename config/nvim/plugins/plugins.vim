@@ -13,8 +13,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'majutsushi/tagbar'
     " Better Comments
     Plug 'tpope/vim-commentary'
-    " icons in vim
-    Plug 'ryanoasis/vim-devicons'
     " Text Navigation
     Plug 'unblevable/quick-scope'
     " Vim Wiki
@@ -50,6 +48,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'mattn/calendar-vim'
     " File Tree
     Plug 'preservim/nerdtree'
+    Plug 'Xuyuanp/nerdtree-git-plugin'
+    Plug 'ryanoasis/vim-devicons'
     " Colorizer for hex color codes
     Plug 'norcalli/nvim-colorizer.lua'
     " Color theme

@@ -25,4 +25,5 @@ source $HOME/.config/nvim/plugins/coc.vim
 source $HOME/.config/nvim/plugins/indentline.vim
 source $HOME/.config/nvim/plugins/togglecursor.vim
 source $HOME/.config/nvim/plugins/undotree.vim
+source $HOME/.config/nvim/plugins/nerdtree.vim
 
