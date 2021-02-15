@@ -7,8 +7,8 @@ get_icon() {
         01n) icon="";; # f186
         02d) icon="";; # f6c4
         02n) icon="";; # f6c3
-        03*) icon="";; # f0c2
-        04*) icon="";; # f0c2
+        03*) icon="";; # f0c2
+        04*) icon="";; # f0c2
         09d) icon="";; # f740
         09n) icon="";; # f740
         10d) icon="";; # f743
